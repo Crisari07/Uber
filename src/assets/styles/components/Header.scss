@@ -1,6 +1,9 @@
+@import "../App.scss";
+@import "../Inputs.scss";
+
 .header {
   align-items: center;
-  background: black;
+  background: $dark-primary-color;
   color: white;
   display: flex;
   height: 100px;
