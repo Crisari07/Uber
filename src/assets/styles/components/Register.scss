@@ -1,5 +1,7 @@
-@import "../App.scss";
 @import "../Inputs.scss";
+
+$primary-register-color: #0097A7;
+$secondary-register-color: #5371FD;
 
 .register {
     background-image: linear-gradient($primary-register-color, $secondary-register-color);

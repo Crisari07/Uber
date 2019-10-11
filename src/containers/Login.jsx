@@ -7,7 +7,7 @@ import twitterIcon from '../assets/static/twitter-icon.png';
 const Login = () => (
   <section className="login">
     <section className="login__container">
-      <h2 tabindex="0">Inicia sesión</h2>
+      <h2>Inicia sesión</h2>
       <form action="" className="login__container--form">
         <input aria-label="Correo" type="text" className="input" placeholder="Correo" />
         <input aria-label="Contraseña" type="password" className="input" placeholder="Contraseña" />
@@ -16,8 +16,12 @@ const Login = () => (
           <label>
             <input type="checkbox" name="" id="cbox1" value="true" /> 
             Recuerdame
-          </label>
-          <a href="/">Olvidé mi contraseña</a>
+          </label>          
+        </div>
+        <div className="login__container--remember-me">
+          <label>
+						<a href="/">Olvidé mi contraseña</a>
+          </label>          
         </div>
       </form>
       <section className="login__container--social-media">
@@ -31,7 +35,7 @@ const Login = () => (
         </div>
       </section>
       <p className="login__container--register">
-        No tienes ninguna cuenta
+        No tienes ninguna cuenta &nbsp;
         <Link to="/register">
           Registrate
         </Link>

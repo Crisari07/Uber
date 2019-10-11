@@ -1,5 +1,7 @@
-@import "../App.scss";
 @import "../Inputs.scss";
+
+$primary-login-color: #0097A7;
+$secondary-login-color: #5371FD;
 
 .login {
     background: linear-gradient($primary-login-color, $secondary-login-color);
@@ -14,10 +16,11 @@
 .login__container {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid white;
-    border-radius: 40px;
+		border-radius: 40px;
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     color: white;
     padding: 68px 68px 40px;
-    min-height: 700px;
+    height: auto;
     width: 300px;
     display: flex;
     justify-content: space-around;
@@ -26,11 +29,11 @@
 
 .login__container--form {
     display: flex;
-    flex-direction: column;    
+		flex-direction: column;   
 }
 
 .login__container--form label {
-    font-size: 14px;   
+    font-size: 14px; 
 }
 
 .login__container--remember-me {
@@ -49,10 +52,11 @@
     text-decoration: underline;
 }
 
-.login__container--social-media > div{
+.login__container--social-media > div {
     display: flex;
     align-items: center;
-    font-size: 14px;
+		font-size: 14px;
+		margin-top: 10px;
     margin-bottom: 10px;
 }
 
