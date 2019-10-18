@@ -29,5 +29,17 @@
     height: 50px;
     letter-spacing: 1px;
     margin: 10px 0;
-    outline: none;
+    outline: none;          
+}
+
+.button-light {
+    background-color: $light-primary-color;
+}
+
+.button-dark {
+    background-color: $dark-primary-color;
+}
+
+.button-primary {
+    background-color: $primary-color;
 }
