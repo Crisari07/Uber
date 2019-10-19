@@ -1,7 +1,4 @@
-@import "../Inputs.scss";
-
-$primary-login-color: #0097A7;
-$secondary-login-color: #5371FD;
+@import "../App.scss";
 
 .login {
     background: linear-gradient($primary-login-color, $secondary-login-color);
