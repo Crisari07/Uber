@@ -4,7 +4,7 @@ import Home from '../containers/Home';
 import Layout from '../containers/Layout';
 import Login from '../containers/Login';
 import Register from '../containers/Register';
-import NotFound from '../components/NotFound';
+import NotFound from '../containers/NotFound';
 
 const App = () => (
   <BrowserRouter>
