@@ -1,5 +1,4 @@
 @import "../App.scss";
-@import "../Inputs.scss";
 
 .header {
   align-items: center;
@@ -13,8 +12,7 @@
 }
 
 .header__img {
-  margin-left: 30px;
-  width: 200px;
+  margin-left: 30px;  
 }
 
 .header__menu {
@@ -31,20 +29,22 @@
   text-align: right;
 }
 
-.header__menu:hover ul, ul:hover {
-    display: block;
+.header__menu--profile:hover ul, ul:hover {
+	display: block;
+	z-index: 1;
+	background-color: red;	
 }
 
-.header__menu li {
+.header__menu--profile li {
   margin: 10px 0px;
 }
 
-.header__menu li a {
+.header__menu--profile li a {
   color: white;
   text-decoration: none;
 }
 
-.header__menu li a:hover {
+.header__menu--profile li a:hover {
   text-decoration: underline;
 }
 
@@ -59,4 +59,21 @@
   width: 40px;
   border-radius: 100%;
   object-fit: cover;
+}
+
+.header__menu--options {
+
+	button {
+		background-color: $light-primary-text-color;
+		margin-left: 5px;
+		margin-right: 5px;		
+	}		
+	
+	a {
+		margin-left: 8px;
+		margin-right: 8px;
+		color: $secondary-text-color;
+		text-decoration: none ;		
+	}	
+
 }
